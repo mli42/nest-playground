@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  webapp:
+  nest_api:
     image: node:19.7-alpine3.17
     container_name: nest_playground
     working_dir: "/backend"
@@ -13,3 +13,28 @@ services:
       - "3000:3000"
     environment:
       HOST: 0.0.0.0
+      DATABASE_HOST: postgres_db
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: postgres
+      DATABASE_NAME: nest_playground_db
+
+  postgres_nest:
+    image: postgres:alpine3.17
+    container_name: postgres_db
+    volumes:
+      - ./database:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: nest_playground_db
+
+  pgadmin:
+    image: dpage/pgadmin4:6.20
+    container_name: pgadmin
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
