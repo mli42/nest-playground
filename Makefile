@@ -33,3 +33,4 @@ fclean:
 	$(DC) down --rmi all --volumes
 	rm -rf ./node_modules
 	rm -rf ./dist
+	rm -rf ./database
