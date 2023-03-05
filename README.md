@@ -1,36 +1,62 @@
-<p align="center">
+# NestJS Playground
+
+<div align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+</div>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<div align="center">
+A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.
+</div>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+<div align="center">
+  <a href="http://nestjs.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/nest js-E0234E?style=for-the-badge&logo=nestjs" alt="Nest JS" />
+  </a>
+  <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/PostgreSQL-909090?style=for-the-badge&logo=postgresql" alt="PostgreSQL" />
+  </a>
+  <a href="https://www.pgadmin.org/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/pgadmin-FF6C37?style=for-the-badge" alt="PGAdmin" />
+  </a>
+  <a href="https://www.postman.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/postman-4169E1?style=for-the-badge&logo=postman" alt="Postman" />
+  </a>
+  <br />
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript" />
+  </a>
+  <a href="https://eslint.org/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
+  </a>
+  <a href="https://prettier.io/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/Prettier-182025?style=for-the-badge&logo=prettier" alt="Prettier" />
+  </a>
+  <br />
+  <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/docker compose-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="docker" />
+  </a>
+  <a href="https://yarnpkg.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white" alt="yarn" />
+  </a>
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="git" />
+  </a>
+</div>
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. \
+This repository is the result of this [Udemy course (NestJS Zero to Hero)](https://www.udemy.com/course/nestjs-zero-to-hero/)
 
 ## Installation
 
+This repo uses a Makefile with docker-compose.
+
 ```bash
-$ yarn install
+$ make
 ```
+
+You can find my Postman Collection [here](assets/postman_collection.json).
 
 ## Running the app
 
@@ -58,16 +84,19 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Support
+## Setup pgadmin
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Register to a new server:
+- Hostname: `postgres_db`
+- Port: `5432`
+- Username: `postgres`
+- Password: `postgres`
 
-## Stay in touch
+<div align="center">
+  <img src="./assets/pgadmin_config.png" alt="pgadmin config" />
+</div>
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## Todo
 
-## License
-
-Nest is [MIT licensed](LICENSE).
+- [ ] Add Swagger
+- [ ] Add Unit Testing
