@@ -29,8 +29,10 @@ down:
 ps:
 	$(DC) ps
 
-fclean:
-	$(DC) down --rmi all --volumes
+clean:
 	rm -rf ./node_modules
 	rm -rf ./dist
+
+fclean: clean
+	$(DC) down --rmi all --volumes
 	rm -rf ./database
